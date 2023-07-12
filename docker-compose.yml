@@ -3,4 +3,4 @@ services:
   urlshortner:
     build: .
     ports:
-      - "8001:5000"
+      - "8010:5000"
