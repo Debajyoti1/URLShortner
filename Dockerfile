@@ -1,7 +1,7 @@
 FROM python:3.11-alpine
 
 COPY ./requirements.txt /app/requirements.txt
-COPY ./templates/* /app/templates
+ADD templates /app/templates
 WORKDIR /app
 
 RUN apk add --no-cache gcc musl-dev linux-headers
